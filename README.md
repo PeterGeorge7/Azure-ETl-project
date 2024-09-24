@@ -12,7 +12,10 @@ Steps we Will talk About:
 During This Project I Got alot of bugs and errors everywhere i will discuss what i have remember and screenshoted but if there is a section without a bug discussed that not means it works fine from the first time it was a tough project as a beginner with alot of searching and diving inside documentation.
 
 # Data Ingestion
-![alt text](https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/image-removebg-preview.png)
+<p align="center">
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/image-removebg-preview.png" alt="Sublime's custom image"/>
+</p>
+![Data Ingestion Image Section](https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/image-removebg-preview.png)
 
 -   **Database Setup**: I downloaded the AdventureWorksLT2022 Database onto my on-premise SQL Server and created a user with the necessary login credentials, ensuring secure access.
     
