@@ -38,16 +38,16 @@ During This Project I Got alot of bugs and errors everywhere i will discuss what
 </p>  
  <p align="center">
   <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/PipeLine%20Copy%20All%20Tables%20Into%20DataLake/output%20of%20the%20lookup%20(that%20i%20will%20use%20to%20SELECT%20data%20from%20it).png" alt=""/>
+</p>  
   output of the lookup (that i will use to SELECT data from it)
-</p>  
  <p align="center">
-  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/PipeLine%20Copy%20All%20Tables%20Into%20DataLake/create%20Copy%20Data%20in%20the%20foreach.png.png" alt=""/>
-  create Copy Data in the foreach
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/PipeLine%20Copy%20All%20Tables%20Into%20DataLake/create%20Copy%20Data%20in%20the%20foreach.png" alt=""/>
 </p>  
+  create Copy Data in the foreach
  <p align="center">
   <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/PipeLine%20Copy%20All%20Tables%20Into%20DataLake/Source%20for%20the%20Copy%20Data%20Task.png" alt=""/>
-  Source for the Copy Data Task
 </p>  
+  Source for the Copy Data Task
     
 -   **Troubleshooting**: Throughout the project, I encountered various technical challenges, such as SQL Server connection issues and numerous unexpected errors. Through extensive research and troubleshooting, I was able to resolve these problems and ensure the successful execution of the pipeline.
     
