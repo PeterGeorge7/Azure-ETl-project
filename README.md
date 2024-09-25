@@ -33,13 +33,25 @@ During This Project I Got alot of bugs and errors everywhere i will discuss what
  <p align="center">
   <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/PipeLine%20Copy%20All%20Tables%20Into%20DataLake/PipeLine.png" alt=""/>
 </p>  
+<p align="center">
+ Pipline
+</p> 
+
+
  <p align="center">
   <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/PipeLine%20Copy%20All%20Tables%20Into%20DataLake/Query%20To%20Get%20All%20scheme%20names%20and%20table%20name%20from%20the%20data%20base%20in%20the%20Lookup%20task.png" alt=""/>
 </p>  
+<p align="center">
+  Query To Get All scheme names and table name from the data base in the Lookup task
+</p> 
+
  <p align="center">
   <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/PipeLine%20Copy%20All%20Tables%20Into%20DataLake/output%20of%20the%20lookup%20(that%20i%20will%20use%20to%20SELECT%20data%20from%20it).png" alt=""/>
 </p>  
+<p align="center">
   output of the lookup (that i will use to SELECT data from it)
+</p>  
+
  <p align="center">
   <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/PipeLine%20Copy%20All%20Tables%20Into%20DataLake/create%20Copy%20Data%20in%20the%20foreach.png" alt=""/>
 </p>  
