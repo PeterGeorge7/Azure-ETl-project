@@ -13,12 +13,12 @@ During This Project I Got alot of bugs and errors everywhere i will discuss what
 
 # Data Ingestion
 <p align="center">
-  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/image-removebg-preview.png" alt="Sublime's custom image"/>
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/image-removebg-preview.png" alt=""/>
 </p>
-![Data Ingestion Image Section](https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/image-removebg-preview.png)
-
 -   **Database Setup**: I downloaded the AdventureWorksLT2022 Database onto my on-premise SQL Server and created a user with the necessary login credentials, ensuring secure access.
-    
+<p align="center">
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/DatabaseLT.png" alt=""/>
+</p>
 -   **Azure Key Vault**: To safeguard sensitive information, I set up an Azure Key Vault and stored the SQL Server credentials in the secrets section, enabling seamless integration between Azure services and my on-premise SQL Server.
     
 -   **Azure Data Factory**: I created an Azure Data Factory, a fully managed data integration service akin to SSIS. This was a key component for orchestrating the data transfer. Despite not having prior experience with Azure Data Factory, I quickly learned the essential functions and navigated the setup.
