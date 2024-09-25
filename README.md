@@ -19,7 +19,7 @@ During This Project I Got alot of bugs and errors everywhere i will discuss what
 -   **Database Setup**: I downloaded the AdventureWorksLT2022 Database onto my on-premise SQL Server and created a user with the necessary login credentials, ensuring secure access.
   
 <p align="center">
-  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/DatabaseLT.png" alt=""/>
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/PipeLine%20Copy%20All%20Tables%20Into%20DataLake/databaseLT.png" alt=""/>
 </p>
 
 -   **Azure Key Vault**: To safeguard sensitive information, I set up an Azure Key Vault and stored the SQL Server credentials in the secrets section, enabling seamless integration between Azure services and my on-premise SQL Server.
