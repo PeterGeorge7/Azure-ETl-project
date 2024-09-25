@@ -87,3 +87,9 @@ During This Project I Got alot of bugs and errors everywhere i will discuss what
     
 -   **Execution**: After resolving initial errors, I successfully executed the data migration, transferring the data from my on-premise SQL Server to Azure Data Lake Gen2 in a Parquet format.
 
+ <p align="center">
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/PipeLine%20Copy%20All%20Tables%20Into%20DataLake/Copied.png" alt=""/>
+</p>  
+ <p align="center">
+ Data Successfully copied to Data Lake Bronze Layer Container
+</p>  
