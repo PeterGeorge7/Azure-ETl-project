@@ -6,7 +6,7 @@ Steps we Will talk About:
  - [Data Ingestion](#data-ingestion)
  - [Data Transformation](#Data-Transformation)
  - [Data Loading](#Data-Loading)
- - Data Reporting
+ - [Data Reporting](#Data-Reporting)
  - End To End Pipline Testing
 
 During This Project I Got alot of bugs and errors everywhere i will discuss what i have remember and screenshoted but if there is a section without a bug discussed that not means it works fine from the first time it was a tough project as a beginner with alot of searching and diving inside documentation.
@@ -160,7 +160,7 @@ Once the data was ingested into the Data Lake, the next step was **Data Transfor
 # Data Loading
 
  <p align="center">
-  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Load%20phase.png" alt=""/>
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/load%20phase.png" alt=""/>
 </p>  
  <p align="center">
  Project Update
@@ -193,3 +193,31 @@ For the **Data Loading** phase, I moved the data from the **Gold layer** in Azur
  <p align="center">
  Create Views Stored Procedure
 </p> 
+
+
+# Data Reporting
+
+For the **Data Reporting** phase, I used the views created in the **Azure Synapse Analytics** database to perform data analysis. These views were directly connected to the **Gold layer** of the Azure Data Lake, ensuring that I was working with the final, refined data. By accessing the data via views, I could easily pull the necessary information for reporting without duplicating storage or moving large datasets.
+
+
+
+
+## Steps Involved:
+1. **Connecting Power BI to Synapse**  
+   I connected **Power BI** to the **Synapse database** where the views were created. Power BI allowed me to directly query the views, which were based on the Delta format data stored in the Gold layer. This connection provided a seamless way to visualize and analyze the refined data.
+
+2. **Building Reports in Power BI**  
+   Using the data from these views, I built interactive dashboards and reports in Power BI. The views provided a consistent structure for my data, allowing for easy creation of:
+   - **Aggregated metrics**
+   - **Visual charts** (bar charts)
+   - **Custom calculations** based on business requirements
+
+3. **Benefits of Using Views**  
+   By using views in Synapse, I ensured that:
+   - **Real-time data access**: Since the views were dynamically generated from the Gold layer, any updates to the data were reflected instantly in Power BI reports.
+   - **Efficient querying**: With the **Delta format** in place, query performance was optimized, making the reporting process faster and more efficient.
+   - **Simplified data management**: There was no need to copy data between systems, reducing complexity and ensuring that data in reports was always up-to-date.
+
+> _Note:_  
+   While setting up the connection between Power BI and Synapse, I encountered some **connection string issues** and **authentication challenges**, which were resolved by ensuring the correct access policies were in place and verifying the credentials in Azure.
+
