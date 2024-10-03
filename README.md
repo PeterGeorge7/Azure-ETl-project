@@ -9,7 +9,7 @@ Steps we Will talk About:
  - [Data Reporting](#Data-Reporting)
  - [End To End Pipline Testing](#End-To-End-Pipline-Testing)
 
-During This Project I Got alot of bugs and errors everywhere i will discuss what i have remember and screenshoted but if there is a section without a bug discussed that not means it works fine from the first time it was a tough project as a beginner with alot of searching and diving inside documentation.
+During This Project I Got alot of bugs and errors everywhere i will discuss what i have remember and screenshoted but if there is a section without a bug discussed that not means it works fine from the first time it was a tough project as a beginner with alot of searching and diving inside documentation. (Codes Provided in Repo)
 
 # Data Ingestion
 <p align="center">
@@ -123,10 +123,11 @@ Once the data was ingested into the Data Lake, the next step was **Data Transfor
 
 1. **Bronze Layer**  
    Raw data was stored in the Bronze layer, directly from the ingestion step. This unprocessed data serves as the foundation for all subsequent transformations.
-
+ [SHOW CODE](https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/bronze%20to%20silver.py)
 
 2. **Silver Layer**  
    In the Silver layer, I applied data cleansing and transformation processes. Using Databricks notebooks, I handled tasks such as removing duplicates, standardizing formats, and enriching the data by joining tables from multiple sources.
+   [SHOW CODE](https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/silver%20to%20gold.py)
 
  <p align="center">
   <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Transformation/transform%20the%20datetime%20type%20to%20date%20and%20save%20the%20delta%20files%20in%20datalake.png" alt=""/>
@@ -193,7 +194,7 @@ For the **Data Loading** phase, I moved the data from the **Gold layer** in Azur
  <p align="center">
  Create Views Stored Procedure
 </p> 
-
+[SHOW CODE](https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/sp_CreateSqlServerViewForAllTables.sql)
 
 # Data Reporting
 
