@@ -138,6 +138,7 @@ Once the data was ingested into the Data Lake, the next step was **Data Transfor
 
 3. **Gold Layer**  
    The final Gold layer contains refined, analytics-ready data. This is where the data is optimized for reporting and querying. Complex aggregations, business logic, and data models were applied here to prepare the data for use in **Power BI** and other reporting tools.
+   [SHOW CODE](https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/silver%20to%20gold.py)
 
  <p align="center">
   <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Transformation/transform%20column%20names%20and%20save%20the%20delta%20files%20in%20datalake%20in%20gold%20layer.png" alt=""/>
