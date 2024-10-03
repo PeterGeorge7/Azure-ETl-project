@@ -160,7 +160,7 @@ Once the data was ingested into the Data Lake, the next step was **Data Transfor
 # Data Loading
 
  <p align="center">
-  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Load%20phase.png" alt=""/>
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/load%20phase.png" alt=""/>
 </p>  
  <p align="center">
  Project Update
