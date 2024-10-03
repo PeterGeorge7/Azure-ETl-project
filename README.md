@@ -228,7 +228,7 @@ In this video, I demonstrate the end-to-end data pipeline, starting with inserti
 
 ## Workflow Overview:
 
-[Watch the Video Here](https://www.youtube.com/watch?v=example)
+[Watch the Video Here](https://youtu.be/IHUMCjygIEI)
 
 1. **Data Insertion:**
    - Two new records are added to the **on-premise SQL Server**.
