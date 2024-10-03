@@ -97,3 +97,49 @@ During This Project I Got alot of bugs and errors everywhere i will discuss what
 
 
 # Data Transformation
+
+Once the data was ingested into the Data Lake, the next step was **Data Transformation**. For this, I used **Databricks** to implement a **Lakehouse architecture** with **medallion layers**: Bronze, Silver, and Gold. Each layer in this architecture serves a specific purpose:
+
+ <p align="center">
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Transformation/databricks%20computer%20instance.png" alt=""/>
+</p>  
+ <p align="center">
+ Create New Databricks Compute to use
+</p>  
+
+ <p align="center">
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Transformation/connect%20databricks%20with%20storage%20gen2.png" alt=""/>
+</p>  
+ <p align="center">
+ Connecting out Compute to Data lake Gen2
+</p>  
+
+1. **Bronze Layer**  
+   Raw data was stored in the Bronze layer, directly from the ingestion step. This unprocessed data serves as the foundation for all subsequent transformations.
+
+
+2. **Silver Layer**  
+   In the Silver layer, I applied data cleansing and transformation processes. Using Databricks notebooks, I handled tasks such as removing duplicates, standardizing formats, and enriching the data by joining tables from multiple sources.
+
+ <p align="center">
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Transformation/transform%20the%20datetime%20type%20to%20date%20and%20save%20the%20delta%20files%20in%20datalake.png" alt=""/>
+</p>  
+ <p align="center">
+ transform the datetime type to date and save the delta files in lakehouse
+</p>  
+
+3. **Gold Layer**  
+   The final Gold layer contains refined, analytics-ready data. This is where the data is optimized for reporting and querying. Complex aggregations, business logic, and data models were applied here to prepare the data for use in **Power BI** and other reporting tools.
+
+ <p align="center">
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Transformation/transform%20column%20names%20and%20save%20the%20delta%20files%20in%20datalake%20in%20gold%20layer.png" alt=""/>
+</p>  
+ <p align="center">
+ transform column names and save the delta files in datalake in gold layer
+</p>  
+
+
+> _Challenges Faced:_  
+   Setting up the data transformations in Databricks presented several challenges. The most significant issues I encountered were related to connecting Databricks with Azure Data Lake Gen2. I faced authentication errors when configuring the access controls, especially with setting up the appropriate service principal and managing permissions. Another frequent issue was with inconsistent read/write operations, where Databricks jobs failed due to mismatches in file formats or schema changes. Debugging these connection issues and permission errors required deep dives into documentation and community forums.
+
+Continue reading about the next step in the pipeline: [Data Loading](#data-loading).
