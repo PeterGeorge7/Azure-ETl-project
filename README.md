@@ -98,6 +98,13 @@ During This Project I Got alot of bugs and errors everywhere i will discuss what
 
 # Data Transformation
 
+ <p align="center">
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Transfor.png" alt=""/>
+</p>  
+ <p align="center">
+ Project Update
+</p>  
+
 Once the data was ingested into the Data Lake, the next step was **Data Transformation**. For this, I used **Databricks** to implement a **Lakehouse architecture** with **medallion layers**: Bronze, Silver, and Gold. Each layer in this architecture serves a specific purpose:
 
  <p align="center">
@@ -139,7 +146,13 @@ Once the data was ingested into the Data Lake, the next step was **Data Transfor
 </p>  
 
 
+ <p align="center">
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/building-data-pipelines-with-delta-lake-120823.png" alt=""/>
+</p>  
+ <p align="center">
+ building data pipelines using Medallion Arch
+</p> 
+
 > _Challenges Faced:_  
    Setting up the data transformations in Databricks presented several challenges. The most significant issues I encountered were related to connecting Databricks with Azure Data Lake Gen2. I faced authentication errors when configuring the access controls, especially with setting up the appropriate service principal and managing permissions. Another frequent issue was with inconsistent read/write operations, where Databricks jobs failed due to mismatches in file formats or schema changes. Debugging these connection issues and permission errors required deep dives into documentation and community forums.
 
-Continue reading about the next step in the pipeline: [Data Loading](#data-loading).
