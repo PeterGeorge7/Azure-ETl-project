@@ -228,10 +228,7 @@ In this video, I demonstrate the end-to-end data pipeline, starting with inserti
 
 ## Workflow Overview:
 
-<video width="320" height="240" controls align="center">
-  <source src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/2024-10-01%2018-58-17.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://youtu.be/IHUMCjygIEI" frameborder="0" allowfullscreen></iframe>
 
 1. **Data Insertion:**
    - Two new records are added to the **on-premise SQL Server**.
