@@ -159,7 +159,22 @@ Once the data was ingested into the Data Lake, the next step was **Data Transfor
 
 # Data Loading
 
+ <p align="center">
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Load%20phase.png" alt=""/>
+</p>  
+ <p align="center">
+ Project Update
+</p>  
+
 For the **Data Loading** phase, I moved the data from the **Gold layer** in Azure Data Lake Storage Gen2 to **Azure Synapse Analytics**. Instead of loading raw data into Synapse, I created **SQL Server views** from the **Delta format** data stored in the Gold layer. This allowed me to access the refined, analytics-ready data directly from Synapse without having to copy or physically move the data.
+
+
+ <p align="center">
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Load/Load%20Pipline.png" alt=""/>
+</p>  
+ <p align="center">
+ Load Pipline in Azure Synapse
+</p> 
 
 
 ## Steps Involved:
@@ -172,3 +187,9 @@ For the **Data Loading** phase, I moved the data from the **Gold layer** in Azur
 3. **Creating Views in Synapse**  
    In Synapse, I used a stored procedure (`sp_CreateSqlServerViewForAllTables`) to create SQL Server views. These views accessed the data from the **Gold layer** via an `OPENROWSET` query, reading the data stored in **Delta format**. Here’s an example of how the views were dynamically generated:
    
+ <p align="center">
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Load/Stored%20Procedure.png" alt=""/>
+</p>  
+ <p align="center">
+ Create Views Stored Procedure
+</p> 
