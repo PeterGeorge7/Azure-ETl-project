@@ -5,7 +5,7 @@ Hi! This is my First Complete ETL Project Using Azure Services Learning alot of 
 Steps we Will talk About: 
  - [Data Ingestion](#data-ingestion)
  - [Data Transformation](#Data-Transformation)
- - Data Loading
+ - [Data Loading](#Data-Loading)
  - Data Reporting
  - End To End Pipline Testing
 
@@ -156,3 +156,19 @@ Once the data was ingested into the Data Lake, the next step was **Data Transfor
 > _Challenges Faced:_  
    Setting up the data transformations in Databricks presented several challenges. The most significant issues I encountered were related to connecting Databricks with Azure Data Lake Gen2. I faced authentication errors when configuring the access controls, especially with setting up the appropriate service principal and managing permissions. Another frequent issue was with inconsistent read/write operations, where Databricks jobs failed due to mismatches in file formats or schema changes. Debugging these connection issues and permission errors required deep dives into documentation and community forums.
 
+
+# Data Loading
+
+For the **Data Loading** phase, I moved the data from the **Gold layer** in Azure Data Lake Storage Gen2 to **Azure Synapse Analytics**. Instead of loading raw data into Synapse, I created **SQL Server views** from the **Delta format** data stored in the Gold layer. This allowed me to access the refined, analytics-ready data directly from Synapse without having to copy or physically move the data.
+
+
+## Steps Involved:
+1. **Get Metadata from Gold Layer**  
+   I first retrieved the necessary metadata from the Gold layer of the Data Lake using Azure Data Factory. This metadata was crucial in ensuring the right tables and data formats were accessed in Synapse.
+
+2. **ForEach Activity in Azure Data Factory**  
+   A **ForEach** activity was used to loop through the tables in the Gold layer and dynamically create views in Synapse for each one.
+
+3. **Creating Views in Synapse**  
+   In Synapse, I used a stored procedure (`sp_CreateSqlServerViewForAllTables`) to create SQL Server views. These views accessed the data from the **Gold layer** via an `OPENROWSET` query, reading the data stored in **Delta format**. Here’s an example of how the views were dynamically generated:
+   
