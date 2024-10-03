@@ -200,7 +200,12 @@ For the **Data Loading** phase, I moved the data from the **Gold layer** in Azur
 For the **Data Reporting** phase, I used the views created in the **Azure Synapse Analytics** database to perform data analysis. These views were directly connected to the **Gold layer** of the Azure Data Lake, ensuring that I was working with the final, refined data. By accessing the data via views, I could easily pull the necessary information for reporting without duplicating storage or moving large datasets.
 
 
-
+ <p align="center">
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Report/PowerBI.png" alt=""/>
+</p>  
+ <p align="center">
+PowerBI Analysis
+</p>
 
 ## Steps Involved:
 1. **Connecting Power BI to Synapse**  
