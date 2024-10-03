@@ -194,6 +194,7 @@ For the **Data Loading** phase, I moved the data from the **Gold layer** in Azur
  <p align="center">
  Create Views Stored Procedure
 </p> 
+
 [SHOW CODE](https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/sp_CreateSqlServerViewForAllTables.sql)
 
 # Data Reporting
