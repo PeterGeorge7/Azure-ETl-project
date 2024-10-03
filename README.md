@@ -7,7 +7,7 @@ Steps we Will talk About:
  - [Data Transformation](#Data-Transformation)
  - [Data Loading](#Data-Loading)
  - [Data Reporting](#Data-Reporting)
- - End To End Pipline Testing
+ - [End To End Pipline Testing](#End-To-End-Pipline-Testing)
 
 During This Project I Got alot of bugs and errors everywhere i will discuss what i have remember and screenshoted but if there is a section without a bug discussed that not means it works fine from the first time it was a tough project as a beginner with alot of searching and diving inside documentation.
 
@@ -221,3 +221,25 @@ For the **Data Reporting** phase, I used the views created in the **Azure Synaps
 > _Note:_  
    While setting up the connection between Power BI and Synapse, I encountered some **connection string issues** and **authentication challenges**, which were resolved by ensuring the correct access policies were in place and verifying the credentials in Azure.
 
+
+
+# End To End Pipline Testing
+In this video, I demonstrate the end-to-end data pipeline, starting with inserting two new records into the **on-premise SQL Server database**. The **Azure Data Factory (ADF)** pipeline is triggered automatically based on a **5-minute interval trigger**.
+
+## Workflow Overview:
+
+<video width="320" height="240" controls align="center">
+  <source src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/2024-10-01%2018-58-17.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+1. **Data Insertion:**
+   - Two new records are added to the **on-premise SQL Server**.
+   
+2. **ADF Pipeline Execution:**
+   - The ADF pipeline, which is scheduled to run every 5 minutes, detects the new records and begins the process of data ingestion.
+   - The pipeline moves the new records to **Azure Data Lake (Gold Layer)** and creates the necessary transformations.
+
+3. **Data Visibility in Power BI:**
+   - Once the records are loaded and transformed, they are available in **Azure Synapse** through views, which are queried in **Power BI** for analysis and reporting.
+   - The new records can be visualized in **Power BI**, confirming that the end-to-end pipeline works as expected.
