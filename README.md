@@ -170,7 +170,7 @@ For the **Data Loading** phase, I moved the data from the **Gold layer** in Azur
 
 
  <p align="center">
-  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Load/Load%20Pipline.png" alt=""/>
+  <img src="https://github.com/PeterGeorge7/Azure-ETl-project/blob/main/images/Load/load%20Pipline.png" alt=""/>
 </p>  
  <p align="center">
  Load Pipline in Azure Synapse
